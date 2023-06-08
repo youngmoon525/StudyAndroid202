@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         tvParams.startToStart = ConstraintLayout.LayoutParams.PARENT_ID;
         tvParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-
         TextView tv = new TextView(this);
         tv.setLayoutParams(tvParams);
         tv.setText("글자 추가되었습니까?");
