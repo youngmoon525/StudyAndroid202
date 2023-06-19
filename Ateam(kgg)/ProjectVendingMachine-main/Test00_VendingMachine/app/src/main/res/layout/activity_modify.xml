@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/cola"
+            android:id="@+id/colaimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <ImageView
+            android:src="@drawable/cider"
+            android:id="@+id/ciderimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <ImageView
+            android:src="@drawable/fanta"
+            android:id="@+id/fantaimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <ImageView
+            android:src="@drawable/soda"
+            android:id="@+id/sodaimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cnt"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수량"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:textSize="30dp"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:textSize="30dp"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_corrected"
+        android:textSize="30dp"
+        android:text="수정완료"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
