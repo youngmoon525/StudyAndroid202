@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventory">
+    <ImageView
+        android:src="@drawable/ui_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/apple"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="43dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/apple_red" />
+
+        <ImageView
+            android:id="@+id/num"
+            android:layout_alignLeft="@+id/apple"
+            android:layout_below="@+id/apple"
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/apple_red" />
+
+        <ImageView
+            android:layout_alignLeft="@+id/apple"
+            android:layout_below="@+id/num"
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/apple_red" />
+
+        
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

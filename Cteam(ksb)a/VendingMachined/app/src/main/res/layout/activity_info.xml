@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/gamefont"
+        android:gravity="center"
+        android:textSize="60dp"
+        android:text="내정보"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00ff0000"
+            android:fontFamily="@font/gamefont"
+            android:text="홈으로"
+            android:textColor="#49454F"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_margin="20dp"
+        android:fontFamily="@font/gamefont"
+        android:textSize="30dp"
+        android:text="아이디 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/gamefont"
+            android:textSize="30dp"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_margin="20dp"
+        android:fontFamily="@font/gamefont"
+        android:textSize="30dp"
+        android:text="이름 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/gamefont"
+            android:textSize="30dp"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_margin="20dp"
+        android:fontFamily="@font/gamefont"
+        android:textSize="30dp"
+        android:text="나이 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/gamefont"
+            android:textSize="30dp"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_margin="20dp"
+        android:fontFamily="@font/gamefont"
+        android:textSize="30dp"
+        android:text="보유 잔액 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_money"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/gamefont"
+            android:textSize="30dp"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:src="@drawable/mario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
