@@ -26,7 +26,11 @@ public class ListFragment extends Fragment {
         list.add(new ListDTO(R.drawable.img3 , "캐릭터3" , "ㅎㅎㅎ"));
         list.add(new ListDTO(R.drawable.img4 , "캐릭터4" , "ㅎㅋ"));
         list.add(new ListDTO(R.drawable.img5 , "캐릭터15" , "ㅋㅋ"));
-
+        list.add(new ListDTO(R.drawable.img1 , "캐릭터21" , "ㅎㅇ"));
+        list.add(new ListDTO(R.drawable.img2 , "캐릭터22" , "ㅂㅂ"));
+        list.add(new ListDTO(R.drawable.img3 , "캐릭터23" , "ㅎㅎㅎ"));
+        list.add(new ListDTO(R.drawable.img4 , "캐릭터24" , "ㅎㅋ"));
+        list.add(new ListDTO(R.drawable.img5 , "캐릭터215" , "ㅋㅋ"));
 
         listv = v.findViewById(R.id.listv);
         AdapterListView adapter = new AdapterListView(inflater , list);
