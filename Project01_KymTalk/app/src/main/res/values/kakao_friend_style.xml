@@ -9,6 +9,17 @@
         <item name="android:textSize">15dp</item>
 
     </style>
+    <style name="kakao_friend_detail_tv" parent="kakao_friend_name_tv">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+
+    </style>
+
+
     <style name="kakao_friend_category_tv_small">
         <item name="android:textColor">@color/friend_tv_category_gray</item>
         <item name="android:textSize">12dp</item>

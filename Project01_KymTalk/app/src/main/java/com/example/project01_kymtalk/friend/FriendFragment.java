@@ -1,5 +1,6 @@
 package com.example.project01_kymtalk.friend;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.project01_kymtalk.MainActivity;
 import com.example.project01_kymtalk.R;
 import com.example.project01_kymtalk.databinding.FragmentFriendBinding;
 
@@ -22,8 +24,11 @@ public class FriendFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentFriendBinding.inflate(inflater , container , false);
 
-        binding.recvFriend.setAdapter(new FriendAdapter(getList()));
+        binding.recvFriend.setAdapter(new FriendAdapter(getList() , getContext() ));
         binding.recvFriend.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        //Intent intent = new Intent(getContext() , MainActivity.class);
+        //startActivity(intent);
         return binding.getRoot();
     }
     public ArrayList<FriendDTO> getList(){
