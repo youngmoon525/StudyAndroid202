@@ -11,7 +11,7 @@
     - 데이터에 숫자 외에 값에 대한 예외처리는 잘 되어 있음.
     - 마이너스값 (-10000)도 숫자값이기때문에 입력이 됨.
         
-        ![Untitled](\Ateam(김기곤 , 김혜민 , 정수원 )/Untitled.png)
+        ![Untitled](Ateam(김기곤 , 김혜민 , 정수원 )/Untitled.png)
         
     - 3.개선사항 - 뒤로가기시 처리 
     - 자판기 메인 ⇒ 관리자모드 ⇒ 자판기메인⇒관리자 모드
@@ -22,6 +22,6 @@
     그 외에 디자인 부분이나 기타 처리(음료 추가 시 수량 체크 등 )는 대부분 잘 구현 되었음.
     고생하셨습니다.
     
-    ![Untitled](\Ateam(김기곤 , 김혜민 , 정수원 )/Untitled%201.png)
+    ![Untitled](Ateam(김기곤 , 김혜민 , 정수원 )/Untitled%201.png)
     
-    ![Untitled](\Ateam(김기곤 , 김혜민 , 정수원 )/Untitled%202.png)
+    ![Untitled](Ateam(김기곤 , 김혜민 , 정수원 )/Untitled%202.png)
