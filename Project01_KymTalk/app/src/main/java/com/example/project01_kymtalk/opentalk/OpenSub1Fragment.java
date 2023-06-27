@@ -26,14 +26,14 @@ public class OpenSub1Fragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentOpenSub1Binding.inflate(inflater,container,false);
         //binding.recv1Opensub1.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
-
-        binding.recv1Opensub1.setAdapter(new OpenSub1Adapter1());
-        binding.recv2Opensub1.setAdapter(new OpenSub1Adapter2());
-        binding.recv3Opensub1.setAdapter(new OpenSub1Adapter3());
-        binding.recv4Opensub1.setAdapter(new OpenSub1Adapter2());
-        binding.recv5Opensub1.setAdapter(new OpenSub1Adapter3());
-        binding.recv6Opensub1.setAdapter(new OpenSub1Adapter2());
-        binding.recv7Opensub1.setAdapter(new OpenSub1Adapter3());
+        OpenSubDAO dao =new OpenSubDAO();
+        binding.recv1Opensub1.setAdapter(new OpenSub1Adapter1(dao.getOpenSub1List()));
+        binding.recv2Opensub1.setAdapter(new OpenSub1Adapter2(dao.getOpenSub2List(1)));
+        binding.recv3Opensub1.setAdapter(new OpenSub1Adapter3(dao.getOpenSub3List(1)));
+        binding.recv4Opensub1.setAdapter(new OpenSub1Adapter2(dao.getOpenSub2List(2)));
+        binding.recv5Opensub1.setAdapter(new OpenSub1Adapter3(dao.getOpenSub3List(1)));
+        binding.recv6Opensub1.setAdapter(new OpenSub1Adapter2(dao.getOpenSub2List(3)));
+        binding.recv7Opensub1.setAdapter(new OpenSub1Adapter3(dao.getOpenSub3List(1)));
 
         binding.recv1Opensub1.setLayoutManager(getManager(LinearLayout.VERTICAL));
         binding.recv2Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));
@@ -55,8 +55,8 @@ public class OpenSub1Fragment extends Fragment {
         Chip chip = new Chip(getContext() , null , com.google.android.material.R.style.Widget_MaterialComponents_Chip_Choice);
         chip.setText(chipText);
         chip.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-        chip.setTextColor(R.drawable.chip_opentalk_forecolor);
-        chip.setCloseIconVisible(true);
+        chip.setTextColor(Color.BLACK);
+        chip.setCloseIconVisible(false);
 
 
         return chip;

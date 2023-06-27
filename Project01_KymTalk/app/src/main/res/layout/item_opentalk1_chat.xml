@@ -15,7 +15,7 @@
         app:cardCornerRadius="10dp"
         >
         <ImageView
-            android:id="@+id/imgv_profile"
+            android:id="@+id/imgv_title"
             android:scaleType="centerCrop"
             android:src="@drawable/friend_img1"
             android:layout_width="match_parent"

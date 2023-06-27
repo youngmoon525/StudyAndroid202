@@ -9,8 +9,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.project01_kymtalk.databinding.ItemOpentalk1ChatBinding;
 import com.example.project01_kymtalk.databinding.ItemOpentalk1Recv2Binding;
 
+import java.util.ArrayList;
+
 public class OpenSub1Adapter2 extends RecyclerView.Adapter<OpenSub1Adapter2.ViewHolder> {
     ItemOpentalk1Recv2Binding binding;
+    ArrayList<OpenSubDTOs.OpenSub2DTO> list;
+
+    public OpenSub1Adapter2(ArrayList<OpenSubDTOs.OpenSub2DTO> list) {
+        this.list = list;
+    }
 
     @NonNull
     @Override
@@ -21,12 +28,14 @@ public class OpenSub1Adapter2 extends RecyclerView.Adapter<OpenSub1Adapter2.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        holder.binding.imgvBackground.setImageResource(list.get(position).getImgBackground());
+        holder.binding.tvTitle.setText(list.get(position).getChatTitle());
+        holder.binding.tvSubtitle.setText(list.get(position).getChatSub());
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
