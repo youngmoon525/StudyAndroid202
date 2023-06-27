@@ -22,6 +22,6 @@
     그 외에 디자인 부분이나 기타 처리(음료 추가 시 수량 체크 등 )는 대부분 잘 구현 되었음.
     고생하셨습니다.
     
-    ![Untitled](AteamImg/Untitled1.png)
+    ![Untitled](AteamImg/Untitled2.png)
     
-   ![Untitled](AteamImg/Untitled1.png)
+   ![Untitled](AteamImg/Untitled3.png)
