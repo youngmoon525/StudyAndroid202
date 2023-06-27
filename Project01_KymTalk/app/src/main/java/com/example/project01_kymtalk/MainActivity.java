@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.project01_kymtalk.databinding.ActivityMainBinding;
 import com.example.project01_kymtalk.friend.FriendFragment;
+import com.example.project01_kymtalk.opentalk.OpenTalkMainFragment;
 
 public class MainActivity extends AppCompatActivity {
     // MainActivity 바인딩 (뷰결합) 처리하기.
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             }else if(item.getItemId()==R.id.tab3){
                 actionBar.setTitle("오픈채팅");
+                fragment = new OpenTalkMainFragment();
             }else if(item.getItemId()==R.id.tab4){
                 actionBar.setTitle("쇼핑");
             }else if(item.getItemId()==R.id.tab5){
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 return false;//메뉴가 바뀌는 처리를 취소한다. ( 들어올가능성없음 )
             }
+
             if(fragment == null) {
                 Toast.makeText(this, "아직 메뉴가 준비가 안되었습니다.!!", Toast.LENGTH_SHORT).show();
             }else{

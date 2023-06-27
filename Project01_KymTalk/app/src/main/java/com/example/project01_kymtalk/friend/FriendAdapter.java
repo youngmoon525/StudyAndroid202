@@ -28,8 +28,8 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.ViewHolder
         this.list = list;
         this.context = context;
     }
-
-
+    //어댑터 : 무슨 역할?
+    //Biding처리 <-> 기존 방식과의 차이.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".opentalk.OpenSub1Fragment"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/banner_img2"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv1_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="이게 내 덕질 방식이야,고독한 팬덤방"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv2_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="귀여운 게 잔뜩"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv3_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="짤로 대화하기 심화 학습"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv4_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="티끌 모아 태산"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv5_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="이런 주제 어때요?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:padding="10dp"
+            android:id="@+id/chip_grp_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="이게 내 덕질 방식이야, 고독한 팬덤방"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv6_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="1년을 기다렸다, 여름판 취미"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:id="@+id/recv7_opensub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EAEAEA"/>
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
