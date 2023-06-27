@@ -44,6 +44,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
         h.binding.imgvProfile.setImageResource(list.get(i).getResImgId());
         h.binding.tvName.setText(list.get(i).getName());
+        h.binding.tvMsg.setText(list.get(i).getMsg());
         h.binding.lnFriend.setOnClickListener(v->{
             Intent intent = new Intent(context , FriendDetailActivity.class);
             intent.putExtra("dto" , list.get(i));

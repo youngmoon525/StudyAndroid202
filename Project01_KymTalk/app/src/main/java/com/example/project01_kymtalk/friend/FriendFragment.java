@@ -33,14 +33,14 @@ public class FriendFragment extends Fragment {
     }
     public ArrayList<FriendDTO> getList(){
         ArrayList<FriendDTO> list = new ArrayList<>();
-        list.add(new FriendDTO(R.drawable.friend_img1 , "이름 1" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img2 , "이름 2" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img3 , "이름 3" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img4 , "이름 4" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img5 , "이름 5" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img6 , "이름 6" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img7 , "이름 7" , ""));
-        list.add(new FriendDTO(R.drawable.friend_img8 , "이름 8" , ""));
+        list.add(new FriendDTO(R.drawable.friend_img1 , "김이름" , "상쾌하구나"));
+        list.add(new FriendDTO(R.drawable.friend_img2 , "이이름" , ""));
+        list.add(new FriendDTO(R.drawable.friend_img3 , "박이름" , "웃으며 살자"));
+        list.add(new FriendDTO(R.drawable.friend_img4 , "장이름" , "웃읍니다"));
+        list.add(new FriendDTO(R.drawable.friend_img5 , "강이름" , ""));
+        list.add(new FriendDTO(R.drawable.friend_img6 , "고이름" , "🙋‍♂️"));
+        list.add(new FriendDTO(R.drawable.friend_img7 , "조이름" , ""));
+        list.add(new FriendDTO(R.drawable.friend_img8 , "송이름" , "여행중"));
         return list;
     }
 }
