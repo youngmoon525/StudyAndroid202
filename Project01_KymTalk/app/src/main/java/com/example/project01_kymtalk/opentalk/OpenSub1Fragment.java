@@ -7,11 +7,15 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.project01_kymtalk.R;
 import com.example.project01_kymtalk.databinding.FragmentOpenSub1Binding;
@@ -19,8 +23,15 @@ import com.google.android.material.chip.Chip;
 
 
 public class OpenSub1Fragment extends Fragment {
-
+    float x1 , x2 ;
+     final int MIN_DISTANCE = 150;
     FragmentOpenSub1Binding binding;
+    ViewPager2 pager2Parent ;
+
+    public OpenSub1Fragment(ViewPager2 pager2Parent) {
+        this.pager2Parent = pager2Parent;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -30,6 +41,30 @@ public class OpenSub1Fragment extends Fragment {
         binding.recv1Opensub1.setAdapter(new OpenSub1Adapter1(dao.getOpenSub1List()));
         binding.recv2Opensub1.setAdapter(new OpenSub1Adapter2(dao.getOpenSub2List(1)));
         binding.recv3Opensub1.setAdapter(new OpenSub1Adapter3(dao.getOpenSub3List(1)));
+
+
+        binding.recv3Opensub1.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.d("UserAction", "onTouch: " + event.getAction());
+                switch(event.getAction())
+                {
+                    case MotionEvent.ACTION_DOWN:
+                        pager2Parent.setUserInputEnabled(false);
+                        binding.recv3Opensub1.setUserInputEnabled(true);
+                        Log.d("UserActi", "ACTION_DOWN: ");
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        pager2Parent.setUserInputEnabled(true);
+                        binding.recv3Opensub1.setUserInputEnabled(false);
+                        Log.d("UserActi", "ACTION_UP: ");
+                        break;
+                }
+                return true;
+            }
+        });
+
         binding.recv4Opensub1.setAdapter(new OpenSub1Adapter2(dao.getOpenSub2List(2)));
         binding.recv5Opensub1.setAdapter(new OpenSub1Adapter3(dao.getOpenSub3List(1)));
         binding.recv6Opensub1.setAdapter(new OpenSub1Adapter2(dao.getOpenSub2List(3)));
@@ -37,7 +72,7 @@ public class OpenSub1Fragment extends Fragment {
 
         binding.recv1Opensub1.setLayoutManager(getManager(LinearLayout.VERTICAL));
         binding.recv2Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));
-        binding.recv3Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));
+       // binding.recv3Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));
         binding.recv4Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));
         binding.recv5Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));
         binding.recv6Opensub1.setLayoutManager(getManager(LinearLayout.HORIZONTAL));

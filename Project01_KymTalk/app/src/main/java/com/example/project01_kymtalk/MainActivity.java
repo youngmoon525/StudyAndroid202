@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.project01_kymtalk.databinding.ActivityMainBinding;
 import com.example.project01_kymtalk.friend.FriendFragment;
+import com.example.project01_kymtalk.gridtest.GridFragment;
 import com.example.project01_kymtalk.opentalk.OpenTalkMainFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new OpenTalkMainFragment();
             }else if(item.getItemId()==R.id.tab4){
                 actionBar.setTitle("쇼핑");
+                fragment = new GridFragment();
             }else if(item.getItemId()==R.id.tab5){
                 actionBar.setTitle("더보기");
             }else{

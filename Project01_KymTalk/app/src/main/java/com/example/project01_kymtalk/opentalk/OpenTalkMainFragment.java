@@ -68,10 +68,10 @@ public class OpenTalkMainFragment extends Fragment {
 
     ArrayList<Fragment> getFragmentList(){
         ArrayList<Fragment> list = new ArrayList<>();
-        list.add(new OpenSub1Fragment());
-        list.add(new OpenSub1Fragment());
-        list.add(new OpenSub1Fragment());
-        list.add(new OpenSub1Fragment());
+        list.add(new OpenSub1Fragment(binding.pager2));
+        list.add(new OpenSub1Fragment(binding.pager2));
+        list.add(new OpenSub1Fragment(binding.pager2));
+        list.add(new OpenSub1Fragment(binding.pager2));
         return list;
     }
 }
