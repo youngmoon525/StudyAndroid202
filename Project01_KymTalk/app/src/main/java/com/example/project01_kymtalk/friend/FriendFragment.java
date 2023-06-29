@@ -26,7 +26,7 @@ public class FriendFragment extends Fragment {
 
         binding.recvFriend.setAdapter(new FriendAdapter(getList() , getContext() ));
         binding.recvFriend.setLayoutManager(new LinearLayoutManager(getContext()));
-
+        MainActivity activity = (MainActivity) getActivity();
         //Intent intent = new Intent(getContext() , MainActivity.class);
         //startActivity(intent);
         return binding.getRoot();

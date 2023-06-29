@@ -43,6 +43,7 @@
             android:textColor="@drawable/chip_opentalk_forecolor"
             app:chipIconTint="@drawable/chip_opentalk_forecolor"
             app:chipMinHeight="40dp"
+            android:layoutDirection="rtl"
             app:iconStartPadding="10dp"
             app:iconEndPadding="10dp"
             app:textStartPadding="5dp"

@@ -62,4 +62,8 @@ public class MainActivity extends AppCompatActivity {
         });// 람다식의 메소드가 이해가 안간다면 new를 통해서 interface구조를 먼저 확인해볼것
 
     }
+
+    public void changeFrag(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+    }
 }
